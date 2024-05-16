@@ -1,0 +1,31 @@
+{
+    "name": "namnb/authorization",
+    "description": "Authorization for the authentication laravel",
+    "type": "php",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Namnb\\Authorization\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nguyenbnam",
+            "email": "nguyen.bnam.34@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": ">8.40"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Namnb\\Authorization\\AuthorizationServiceProvider"
+            ],
+            "aliases": {
+                "Nbauthorization": "Namnb\\Authorization\\Facades"
+            }
+        }
+    }
+}
