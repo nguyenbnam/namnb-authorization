@@ -1,0 +1,26 @@
+{
+    "name": "namnb/authorization",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Namnb\\Authorization\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nguyenbnam",
+            "email": "nguyen.bnam.34@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Namnb\\Authorization\\"
+            ]
+        }
+    }
+}
