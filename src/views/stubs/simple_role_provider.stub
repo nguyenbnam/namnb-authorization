@@ -1,0 +1,37 @@
+<?php
+
+namespace Modules\Role\Providers;
+
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Modules\Role\Entities\ExtendRole;
+use Modules\Role\Policies\ExtendRolePolicy;
+
+class SimpleRoleServiceProvider extends ServiceProvider
+{
+    protected $policies = [
+        ExtendRole::class => ExtendRolePolicy::class,
+    ];
+
+    /**
+     * Bootstrap services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        $this->registerPolicies();
+
+        {{ gate_define }}
+    }
+
+    /**
+     * Register services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+}
